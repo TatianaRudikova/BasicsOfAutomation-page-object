@@ -22,7 +22,7 @@ public class MoneyTransferPage {
     }
 
     public void emptyAmountField() {
-        $(byText("Введите сумму")).shouldBe(visible);
+        $(byText("Сумма перевода должна быть больше нуля.")).shouldBe(visible);
     }
 
     public void amountMoreThanBalance() {

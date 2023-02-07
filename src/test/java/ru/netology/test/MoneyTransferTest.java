@@ -65,7 +65,7 @@ public class MoneyTransferTest {
     }
 
     @Test
-    void shouldTransferFromCardToSameCard() {
+    void shouldTransferFromCardToSameCardNegativeTest() {
         val LoginPage = new LoginPage();
         val authInfo = getAuthInfo();
         val verificationPage = LoginPage.validLogin(authInfo);
